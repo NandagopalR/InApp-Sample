@@ -1,0 +1,778 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 115,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "rdG1AAAAIAAJ",
+      "etag": "cU5l4FoYa6w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/rdG1AAAAIAAJ",
+      "volumeInfo": {
+        "title": "V. O. Chidambaram Pillai",
+        "authors": [
+          "Rā. A. Patmanāpan̲"
+        ],
+        "publishedDate": "1977",
+        "description": "On the life and works of V.U. Chidambaram Pillai, 1872-1936, freedom fighter and Tamil litterateur.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UCAL:B4303250"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 103,
+        "printType": "BOOK",
+        "categories": [
+          "Revolutionaries"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=rdG1AAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=rdG1AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=rdG1AAAAIAAJ&q=v.u.chidambaram+pillai&dq=v.u.chidambaram+pillai&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=rdG1AAAAIAAJ&dq=v.u.chidambaram+pillai&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/V_O_Chidambaram_Pillai.html?hl=&id=rdG1AAAAIAAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=rdG1AAAAIAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "On the life and works of V.U. Chidambaram Pillai, 1872-1936, freedom fighter and Tamil litterateur."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "TGw-ef8ZrHoC",
+      "etag": "EzzyicZ4D9Y",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/TGw-ef8ZrHoC",
+      "volumeInfo": {
+        "title": "Tirukural",
+        "subtitle": "",
+        "authors": [
+          "Tiruvaḷḷuvar",
+          "Satguru Sivaya Subramuniyaswami"
+        ],
+        "publisher": "Abhinav Publications",
+        "publishedDate": "2000-01-01",
+        "description": "-----------",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8170173906"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788170173908"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 549,
+        "printType": "BOOK",
+        "categories": [
+          "Art"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.3.1.0.preview.1",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=TGw-ef8ZrHoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=TGw-ef8ZrHoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=TGw-ef8ZrHoC&printsec=frontcover&dq=v.u.chidambaram+pillai&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=TGw-ef8ZrHoC&dq=v.u.chidambaram+pillai&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Tirukural.html?hl=&id=TGw-ef8ZrHoC"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Tirukural-sample-pdf.acsm?id=TGw-ef8ZrHoC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=TGw-ef8ZrHoC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Original text, modern Tamil, and English translations of Tirukkur̲aḷ, ancient Tamil didactic verse work, by Tiruvaḷḷuvar, Tamil poet."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "nePvcPXSvzkC",
+      "etag": "5RYFNwv+xKo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/nePvcPXSvzkC",
+      "volumeInfo": {
+        "title": "Environment, Degradation And Rural Poverty",
+        "authors": [
+          "M. Soundarapandian"
+        ],
+        "publisher": "Discovery Publishing House",
+        "publishedDate": "2005-01-01",
+        "description": "Contents: Introduction, Environmental Degradation and Rural Poverty, Environmental Degradation in Study Districts, Impact of Environment Degradation on Rural Poverty, Summary and Conclusions.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8183560148"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788183560146"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 200,
+        "printType": "BOOK",
+        "categories": [
+          "Agriculture"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.preview.1",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=nePvcPXSvzkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=nePvcPXSvzkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=nePvcPXSvzkC&printsec=frontcover&dq=v.u.chidambaram+pillai&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=nePvcPXSvzkC&dq=v.u.chidambaram+pillai&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Environment_Degradation_And_Rural_Povert.html?hl=&id=nePvcPXSvzkC"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=nePvcPXSvzkC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Contents: Introduction, Environmental Degradation and Rural Poverty, Environmental Degradation in Study Districts, Impact of Environment Degradation on Rural Poverty, Summary and Conclusions."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "sDd_jT6OKz0C",
+      "etag": "yw+w5bLGyQ0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/sDd_jT6OKz0C",
+      "volumeInfo": {
+        "title": "Catalogue of the Tamil Books in the Library of the British Musuem",
+        "authors": [
+          "L. D. Barnett",
+          "G. U. Pope"
+        ],
+        "publisher": "Asian Educational Services",
+        "publishedDate": "1995",
+        "description": "Tamil Literature -Tamil Bbibliography",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8120610008"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788120610002"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 1288,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.4.3.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=sDd_jT6OKz0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=sDd_jT6OKz0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=sDd_jT6OKz0C&pg=PA433&dq=v.u.chidambaram+pillai&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=sDd_jT6OKz0C&dq=v.u.chidambaram+pillai&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Catalogue_of_the_Tamil_Books_in_the_Libr.html?hl=&id=sDd_jT6OKz0C"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=sDd_jT6OKz0C&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... outb Qaming Toorld Quit (56m&amp;ast trio so. [Tol-kāppiyam, Porul-adhikāram (the <br>\nAga-tinaiy-iyal and Pura-tinaiy-iyal). With commentary of Ilam-büranar. Edited by <br>\n<b>V. U. Chidambaram Pillai</b>.] pt. i. pp. 136. Q+ oror [Madras, 1919.] 4°. 14172. f."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "rF8ABAAAQBAJ",
+      "etag": "zHrVSsLSd5M",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/rF8ABAAAQBAJ",
+      "volumeInfo": {
+        "title": "Encyclopedia of Indian Cinema",
+        "authors": [
+          "Ashish Rajadhyaksha",
+          "Paul Willemen"
+        ],
+        "publisher": "Routledge",
+        "publishedDate": "2014-07-10",
+        "description": "First Published in 1999. Routledge is an imprint of Taylor & Francis, an informa company.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781135943257"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1135943257"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 658,
+        "printType": "BOOK",
+        "categories": [
+          "Reference"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=rF8ABAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=rF8ABAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=rF8ABAAAQBAJ&pg=PA1994-IA659&dq=v.u.chidambaram+pillai&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=rF8ABAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-rF8ABAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 4708.2,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 4708.2,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=rF8ABAAAQBAJ&rdid=book-rF8ABAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 4708200000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 4708200000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Encyclopedia_of_Indian_Cinema-sample-epub.acsm?id=rF8ABAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Encyclopedia_of_Indian_Cinema-sample-pdf.acsm?id=rF8ABAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=rF8ABAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "<b>Vu. Chidambaram Pillai</b> (Ganesan), a nationalist businessman who launched the <br>\nSwadeshi Steam Navigation Company to break the British monopoly in <br>\nshippingat the turn of the century, which earned him the honorific title Kappalotiya<br>\n&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "QrWEAwAAQBAJ",
+      "etag": "uB9osVskjrI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/QrWEAwAAQBAJ",
+      "volumeInfo": {
+        "title": "Kolar Gold Field",
+        "subtitle": "(Unfolding the Untold)",
+        "authors": [
+          "Dr. S. Srikumar"
+        ],
+        "publisher": "Partridge Publishing",
+        "publishedDate": "2014-03-12",
+        "description": "Neil Armstrong, Edwin Buzz Aldrin, and Michael Collins flew high above the planet Earth to reach the Moon and to land on it for the first time. But it was the men at Kolar Gold Field who dug deepest excavations below the surface and landed on the ultra-deep horizon into the planet Earth for the first time in human history! The latter was a hundred times dangerous than the space odyssey. While space expeditions explore the heavenly bodies, the land expeditions explore the earthly formationsall for the welfare of humankind. The talents of the men at Kolar Gold Field could be so greatly equated that they were worthy of driving the Sun around Earth. They made deepest wells on Earthor practically, it turned out to become the hell on Earth. The mine workers risked their lives to win gold for the luxury of the world community. Hence, it was all a daily rebirth for them. Reaching the lowest levels of these golden wells drove scientists to find new sophistications in technology. With the state-of-the-art, the miners at Kolar Gold Field overwhelmed nature, posing serious challenges to man trying his destiny. They proved how limitations of nature could be overcome to achieve results! The astonished nature rewarded them suitably. The Wonders of the World themselves wondered on man overcoming the dangers at the interior of the earth, their courage, the technological innovations in their industry, etc. This BookKolar Gold Field (Unfolding the Untold)exposes all the oblivion facts on the great city just known globally as KGF for the first time in the world. A golden history is now placed before you. It's hoped learned man/woman like you will pass on the glorious information to your next generation and help them for a better understanding of our times. For this, should you not read this book? S. Srikumar",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781482815078"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1482815079"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 922,
+        "printType": "BOOK",
+        "categories": [
+          "History"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.0.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=QrWEAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=QrWEAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=QrWEAwAAQBAJ&pg=PA294&dq=v.u.chidambaram+pillai&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=QrWEAwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-QrWEAwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 199.42,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 139.59,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=QrWEAwAAQBAJ&rdid=book-QrWEAwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 199420000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 139590000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Kolar_Gold_Field-sample-epub.acsm?id=QrWEAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Kolar_Gold_Field-sample-pdf.acsm?id=QrWEAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=QrWEAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... as gift items and luxury items were imported by this company and sold them to <br>\nthe public. Frank &amp;Co was later renamed the Va.Vu.Si Nagar after the great <br>\nfreedom fighter <b>V.U.Chidambaram Pillai</b> who started a Swadesi Shipping <br>\nCorporation&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "QgQCBAAAQBAJ",
+      "etag": "6uVlOQEEVMg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/QgQCBAAAQBAJ",
+      "volumeInfo": {
+        "title": "Me & Lee",
+        "subtitle": "How I Came to Know, Love and Lose Lee Harvey Oswald",
+        "authors": [
+          "Judyth Baker",
+          "Jim Marrs"
+        ],
+        "publisher": "Trine Day",
+        "publishedDate": "2011-10-22",
+        "description": "Judyth Vary was once a promising science student who dreamed of finding a cure for cancer; this exposé is her account of how she strayed from a path of mainstream scholarship at the University of Florida to a life of espionage in New Orleans with Lee Harvey Oswald. In her narrative she offers extensive documentation on how she came to be a cancer expert at such a young age, the personalities who urged her to relocate to New Orleans, and what led to her involvement in the development of a biological weapon that Oswald was to smuggle into Cuba to eliminate Fidel Castro. Details on what she knew of Kennedy’s impending assassination, her conversations with Oswald as late as two days before the killing, and her belief that Oswald was a deep-cover intelligence agent who was framed for an assassination he was actually trying to prevent, are also revealed.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781936296675"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1936296675"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 608,
+        "printType": "BOOK",
+        "categories": [
+          "Biography & Autobiography"
+        ],
+        "averageRating": 1,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.8.8.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=QgQCBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=QgQCBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=QgQCBAAAQBAJ&printsec=frontcover&dq=v.u.chidambaram+pillai&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=QgQCBAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-QgQCBAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 1415.22,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 707.61,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=QgQCBAAAQBAJ&rdid=book-QgQCBAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 1415220000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 707610000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Me_Lee-sample-epub.acsm?id=QgQCBAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Me_Lee-sample-pdf.acsm?id=QgQCBAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=QgQCBAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Judyth Vary was once a promising science student who dreamed of finding a cure for cancer; this exposé is her account of how she strayed from a path of mainstream scholarship at the University of Florida to a life of espionage in New ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "BGlkAAAAMAAJ",
+      "etag": "0mXE1HO6GKk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/BGlkAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Sivagnaana Munivar",
+        "authors": [
+          "T. N. Ramachandran"
+        ],
+        "publishedDate": "1999",
+        "description": "On the life and works of Civana_na Mu_nivar, 18th cent., Tamil author.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8126006307"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788126006304"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 101,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=BGlkAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=BGlkAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=BGlkAAAAMAAJ&q=v.u.chidambaram+pillai&dq=v.u.chidambaram+pillai&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=BGlkAAAAMAAJ&dq=v.u.chidambaram+pillai&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Sivagnaana_Munivar.html?hl=&id=BGlkAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=BGlkAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "On the life and works of Civana_na Mu_nivar, 18th cent., Tamil author."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Mn9DAAAAYAAJ",
+      "etag": "CGaBAGEZcDU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Mn9DAAAAYAAJ",
+      "volumeInfo": {
+        "title": "Boeings and bullock-carts",
+        "subtitle": "studies in change and continuity in Indian civilization : (essays in honour of K. Ishwaran). Law, politics and society in India",
+        "authors": [
+          "Yogendra K. Malik"
+        ],
+        "publisher": "South Asia Books",
+        "publishedDate": "1990-10-01",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8170010659"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788170010654"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 247,
+        "printType": "BOOK",
+        "categories": [
+          "History"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Mn9DAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Mn9DAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=Mn9DAAAAYAAJ&q=v.u.chidambaram+pillai&dq=v.u.chidambaram+pillai&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=Mn9DAAAAYAAJ&dq=v.u.chidambaram+pillai&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Boeings_and_bullock_carts.html?hl=&id=Mn9DAAAAYAAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Mn9DAAAAYAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This is an important study dealing with the efforts that Chidambaram Pillai took in <br>\nfounding a steam navigation company with indigenous capital and management. <br>\nAs a result of fierce ... See also, <b>V.U. Chidambaram Pillai</b>, Va. U. Ci. Cuyacaritai&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "VfUoAQAAIAAJ",
+      "etag": "lw5AEYD789k",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/VfUoAQAAIAAJ",
+      "volumeInfo": {
+        "title": "Accessions List, South Asia",
+        "authors": [
+          "Library of Congress Office, New Delhi"
+        ],
+        "publishedDate": "1995-01",
+        "description": "Records publications acquired from Afghanistan, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan, and Sri Lanka, by the U.S. Library of Congress Offices in New Delhi, India, and Karachi, Pakistan.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "STANFORD:36105012099045"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "categories": [
+          "South Asia"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.1.0.preview.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=VfUoAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=VfUoAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=VfUoAQAAIAAJ&q=v.u.chidambaram+pillai&dq=v.u.chidambaram+pillai&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=VfUoAQAAIAAJ&dq=v.u.chidambaram+pillai&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Accessions_List_South_Asia.html?hl=&id=VfUoAQAAIAAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=VfUoAQAAIAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Songs, with melody and beat indications, for a play, dramatization of the life and <br>\nwork of <b>V.U. Chidambaram Pillai</b>, 1872-1936, Indian freedom fighter from Tamil <br>\nNadu, by Celam Em. Cittaracan, and staged by the T.K.S. Brothers. 5015 LCN:&nbsp;..."
+      }
+    }
+  ]
+}
