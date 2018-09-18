@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Books Library</string>
+
+    <string name="public_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjzDvtjXDbJfcFmOCQIxT6SNLVZIkv442siKqKHrtLA5xiVU5PYUEitQQK//fiTU8HC5wNvL/cWl3YkEIFsnqdCga64360agn3MTMMRAD9ST1aSHqRNQwE/AXtl9fe2JxkGQ1IHwGEqdwH5W+3x+vHfwmXILFGSoB7BLHwbGUX1S6zCHCy2PJocg0mXdCQK0m00wiZb/6nakzGhpQs1P+Ko8/kESaD/qVRu16Mb54kB4loczpclO2ib6OHVzlfyoQ3IWX10IDOkc3MnjLWkQjsPrU1dM/wCHb9UDcfwC/0Ey42VLfw7yZbOtbnT2rS/o70BDL+n8U53nbDxIGoXa5IQIDAQAB</string>
 </resources>
