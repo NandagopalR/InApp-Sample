@@ -2,6 +2,7 @@ package com.nanda.bookslibrary.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -73,6 +74,13 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
         }
 
         public void bindDataToviews(BooksModel model) {
+            if (model.isPurchased()) {
+                btnPurchase.setBackgroundColor(ContextCompat.getColor(context, R.color.colorPrimary));
+                btnPurchase.setText("Purchased");
+            } else {
+                btnPurchase.setBackgroundColor(ContextCompat.getColor(context, R.color.colorAccent));
+                btnPurchase.setText("Purchase");
+            }
             tvTitle.setText(model != null && model.getVolumeInfo() != null ? model.getVolumeInfo().getTitle() : "NA");
             tvSubTitle.setText(String.format("Author - %s", model != null && model.getVolumeInfo() != null &&
                     model.getVolumeInfo().getAuthors() != null && model.getVolumeInfo().getAuthors().size() > 0 ?

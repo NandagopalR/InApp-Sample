@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -38,6 +39,7 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
     private List<String> bookListIds = new ArrayList<>();
     private IabHelper mHelper;
     private String base64EncodedPublicKey;
+    private List<PurchaseModel> purchasedItems;
 
     public static Intent getCallingIntent(Context context) {
         return new Intent(context, HomeActivity.class);
@@ -59,12 +61,12 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
         recyclerView.setItemAnimator(null);
         recyclerView.setAdapter(adapter);
 
+
         if (!TextUtils.isEmpty(googleBooksJson)) {
             GooglsBooksResponse response = gson.fromJson(googleBooksJson, GooglsBooksResponse.class);
             if (response != null && response.getBooksModelList() != null) {
                 booksModelList = response.getBooksModelList();
                 if (booksModelList != null && booksModelList.size() > 0) {
-                    adapter.setBooksModelList(booksModelList);
                     bookListIds.clear();
                     bookListIds.addAll(getBookListIds(booksModelList));
                     initiateInApp();
@@ -72,6 +74,27 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
             }
         }
 
+    }
+
+    private void updateViews() {
+        if (purchasedItems != null && purchasedItems.size() > 0) {
+
+            for (int i = 0, purchasedItemsSize = purchasedItems.size(); i < purchasedItemsSize; i++) {
+                PurchaseModel model = purchasedItems.get(i);
+                if (model != null) {
+                    for (int i1 = 0, booksModelListSize = booksModelList.size(); i1 < booksModelListSize; i1++) {
+                        BooksModel item = booksModelList.get(i1);
+                        String bookId = getPackageName() + "." + item.getId();
+                        if (item != null && bookId.equals(model.getId())) {
+                            item.setPurchased(true);
+                        }
+                    }
+                }
+            }
+        }
+        if (booksModelList != null && booksModelList.size() > 0) {
+            adapter.setBooksModelList(booksModelList);
+        }
     }
 
     private List<String> getBookListIds(List<BooksModel> booksModelList) {
@@ -95,6 +118,7 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
             public void onIabSetupFinished(IabResult result) {
                 if (!result.isSuccess()) {
                     showToast("Problem setting up In-app Billing: " + result);
+                    updateViews();
                 } else {
                     loadProducts();
                 }
@@ -107,7 +131,7 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
             mHelper.queryInventoryAsync(true, bookListIds, null, new IabHelper.QueryInventoryFinishedListener() {
                 @Override
                 public void onQueryInventoryFinished(IabResult result, Inventory inv) {
-                    List<PurchaseModel> items = new ArrayList<>();
+                    purchasedItems = new ArrayList<>();
                     PurchaseModel item;
 
                     for (BooksModel model : booksModelList) {
@@ -119,16 +143,27 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
                             item.setDescription(inv.getSkuDetails(s).getDescription());
                             item.setPrice(inv.getSkuDetails(s).getPrice());
                             item.setId(inv.getSkuDetails(s).getSku());
-                            items.add(item);
+                            item.setPurchased(true);
+                            purchasedItems.add(item);
+                            Log.e("Purchased Desc - ", " - " + item.getDescription());
+                            Log.e("Purchased Id - ", " - " + item.getId());
+                            Log.e("Purchased Price - ", " - " + item.getPrice());
+                            Log.e("Purchased Title - ", " - " + item.getTitle());
                         }
                     }
 
-                    if (items.isEmpty()) {
+                    if (purchasedItems.isEmpty()) {
                         // Do stuff for empty list
                     } else {
-                        // Do stuff to notify the recyclerview
-                        showToast(String.valueOf(items.toArray()));
+                        StringBuilder builder = new StringBuilder();
+                        for (int i = 0, itemsSize = purchasedItems.size(); i < itemsSize; i++) {
+                            PurchaseModel model = purchasedItems.get(i);
+                            builder.append(model.getTitle());
+                            builder.append("");
+                        }
+                        Toast.makeText(HomeActivity.this, builder, Toast.LENGTH_SHORT).show();
                     }
+                    updateViews();
                 }
             });
         } catch (IabHelper.IabAsyncInProgressException e) {
@@ -194,18 +229,22 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
 
     @Override
     public void onPurchaseClicked(BooksModel model) {
-        try {
-            if (mHelper != null) mHelper.flagEndAsync();
-            String id = String.format(Locale.getDefault(), "%s.%s", getPackageName(), model.getId());
-            mHelper.launchPurchaseFlow(this, id, RC_REQUEST, mPurchaseFinishedListener, "");
-        } catch (IabHelper.IabAsyncInProgressException e) {
-            Log.e("", "onProductClick: " + e.getMessage());
-            showToast(e.getMessage());
+        if (!model.isPurchased()) {
             try {
-                mHelper.dispose();
-            } catch (IabHelper.IabAsyncInProgressException e1) {
-                e1.printStackTrace();
+                if (mHelper != null) mHelper.flagEndAsync();
+                String id = String.format(Locale.getDefault(), "%s.%s", getPackageName(), model.getId());
+                mHelper.launchPurchaseFlow(this, id, RC_REQUEST, mPurchaseFinishedListener, "");
+            } catch (IabHelper.IabAsyncInProgressException e) {
+                Log.e("", "onProductClick: " + e.getMessage());
+                showToast(e.getMessage());
+                try {
+                    mHelper.dispose();
+                } catch (IabHelper.IabAsyncInProgressException e1) {
+                    e1.printStackTrace();
+                }
             }
+        } else {
+            Toast.makeText(this, "You're already purchased", Toast.LENGTH_SHORT).show();
         }
     }
 }

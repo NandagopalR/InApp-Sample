@@ -6,6 +6,7 @@ public class PurchaseModel {
     private String title;
     private String description;
     private String price;
+    private boolean isPurchased = false;
 
     public String getId() {
         return id;
@@ -37,5 +38,13 @@ public class PurchaseModel {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public boolean isPurchased() {
+        return isPurchased;
+    }
+
+    public void setPurchased(boolean purchased) {
+        isPurchased = purchased;
     }
 }

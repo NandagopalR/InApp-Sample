@@ -13,6 +13,9 @@ public class BooksModel {
     @SerializedName("selfLink")
     private String selfLink;
 
+    @SerializedName("isPurchased")
+    private boolean isPurchased;
+
     public VolumeInfo getVolumeInfo() {
         return volumeInfo;
     }
@@ -35,5 +38,13 @@ public class BooksModel {
 
     public void setSelfLink(String selfLink) {
         this.selfLink = selfLink;
+    }
+
+    public boolean isPurchased() {
+        return isPurchased;
+    }
+
+    public void setPurchased(boolean purchased) {
+        isPurchased = purchased;
     }
 }
