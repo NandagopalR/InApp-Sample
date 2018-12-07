@@ -192,6 +192,7 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
         public void onIabPurchaseFinished(IabResult result, Purchase purchase) {
             Log.d("", "Purchase finished: " + result + ", purchase: " + purchase);
 
+            Toast.makeText(HomeActivity.this, "Purchase Finish Callback.", Toast.LENGTH_SHORT).show();
             // if we were disposed of in the meantime, quit.
             if (mHelper == null) return;
 
@@ -199,8 +200,8 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
                 showToast("Error purchasing: " + result);
                 return;
             }
-
-            Log.d("", "Purchase successful." + purchase);
+            loadProducts();
+            Toast.makeText(HomeActivity.this, "Purchase successful." + purchase, Toast.LENGTH_SHORT).show();
 
             try {
                 mHelper.consumeAsync(purchase, mConsumeFinishedListener);
