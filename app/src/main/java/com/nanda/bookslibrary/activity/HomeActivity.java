@@ -14,6 +14,9 @@ import com.google.gson.GsonBuilder;
 import com.nanda.bookslibrary.R;
 import com.nanda.bookslibrary.adapter.BookAdapter;
 import com.nanda.bookslibrary.base.BaseActivity;
+import com.nanda.bookslibrary.helper.billinglib.BillingProcessor;
+import com.nanda.bookslibrary.helper.billinglib.SkuDetails;
+import com.nanda.bookslibrary.helper.billinglib.TransactionDetails;
 import com.nanda.bookslibrary.model.BooksModel;
 import com.nanda.bookslibrary.model.GooglsBooksResponse;
 import com.nanda.bookslibrary.model.PurchaseModel;
@@ -31,6 +34,7 @@ import java.util.Locale;
 public class HomeActivity extends BaseActivity implements BookAdapter.BookPurchaseListener {
 
     private static final int RC_REQUEST = 1243;
+    private static final String LOG_TAG = "In_App";
     private RecyclerView recyclerView;
     private BookAdapter adapter;
     private String googleBooksJson;
@@ -41,8 +45,23 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
     private String base64EncodedPublicKey;
     private List<PurchaseModel> purchasedItems;
 
+    private boolean isItemClicked = false;
+    private BillingProcessor bp;
+
     public static Intent getCallingIntent(Context context) {
         return new Intent(context, HomeActivity.class);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (isItemClicked) {
+            try {
+                initiateInApp();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
@@ -60,7 +79,7 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setItemAnimator(null);
         recyclerView.setAdapter(adapter);
-
+//        initiateBilling();
 
         if (!TextUtils.isEmpty(googleBooksJson)) {
             GooglsBooksResponse response = gson.fromJson(googleBooksJson, GooglsBooksResponse.class);
@@ -74,6 +93,17 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
             }
         }
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        if (!bp.handleActivityResult(requestCode, resultCode, data)) {
+//            super.onActivityResult(requestCode, resultCode, data);
+//        }
+        if (!mHelper.handleActivityResult(requestCode,
+                resultCode, data)) {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
     }
 
     private void updateViews() {
@@ -231,11 +261,16 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
     @Override
     public void onPurchaseClicked(BooksModel model) {
         if (!model.isPurchased()) {
+//            String id = String.format(Locale.getDefault(), "%s.%s", getPackageName(), model.getId());
+//            bp.purchase(this, id);
+////            bp.subscribe(this, id);
             try {
-                if (mHelper != null) mHelper.flagEndAsync();
                 String id = String.format(Locale.getDefault(), "%s.%s", getPackageName(), model.getId());
-                mHelper.launchPurchaseFlow(this, id, RC_REQUEST, mPurchaseFinishedListener, "");
+                if (mHelper != null) mHelper.flagEndAsync();
+                mHelper.launchSubscriptionPurchaseFlow(this, id, RC_REQUEST, mPurchaseFinishedListener, "");
+                isItemClicked = true;
             } catch (IabHelper.IabAsyncInProgressException e) {
+                isItemClicked = false;
                 Log.e("", "onProductClick: " + e.getMessage());
                 showToast(e.getMessage());
                 try {
@@ -248,4 +283,40 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
             Toast.makeText(this, "You're already purchased", Toast.LENGTH_SHORT).show();
         }
     }
+
+    private void initiateBilling() {
+        bp = new BillingProcessor(this, base64EncodedPublicKey, "04636598810230714345", new BillingProcessor.IBillingHandler() {
+            @Override
+            public void onProductPurchased(String productId, TransactionDetails details) {
+                showToast("onProductPurchased: " + productId);
+//                updateTextViews();
+            }
+
+            @Override
+            public void onBillingError(int errorCode, Throwable error) {
+                showToast("onBillingError: " + Integer.toString(errorCode));
+            }
+
+            @Override
+            public void onBillingInitialized() {
+                showToast("onBillingInitialized");
+                for (SkuDetails sku : bp.getPurchaseListingDetails((ArrayList<String>) bookListIds)) {
+                    Log.d(LOG_TAG, "Owned Managed Product: " + sku.title);
+                }
+//                readyToPurchase = true;
+//                updateTextViews();
+            }
+
+            @Override
+            public void onPurchaseHistoryRestored() {
+                showToast("onPurchaseHistoryRestored");
+                for (String sku : bp.listOwnedProducts())
+                    Log.d(LOG_TAG, "Owned Managed Product: " + sku);
+                for (String sku : bp.listOwnedSubscriptions())
+                    Log.d(LOG_TAG, "Owned Subscription: " + sku);
+//                updateTextViews();
+            }
+        });
+    }
+
 }
