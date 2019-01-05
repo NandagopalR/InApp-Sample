@@ -106,6 +106,10 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
         }
     }
 
+    private String getInAppProductId(String productId) {
+        return String.format(Locale.getDefault(), "%s.inapp.%s", getPackageName(), productId);
+    }
+
     private void updateViews() {
         if (purchasedItems != null && purchasedItems.size() > 0) {
 
@@ -114,7 +118,7 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
                 if (model != null) {
                     for (int i1 = 0, booksModelListSize = booksModelList.size(); i1 < booksModelListSize; i1++) {
                         BooksModel item = booksModelList.get(i1);
-                        String bookId = getPackageName() + "." + item.getId();
+                        String bookId = getInAppProductId(item.getId());
                         if (item != null && bookId.equals(model.getId())) {
                             item.setPurchased(true);
                         }
@@ -135,8 +139,7 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
         for (int i = 0, booksModelListSize = booksModelList.size(); i < booksModelListSize; i++) {
             BooksModel model = booksModelList.get(i);
             if (model != null) {
-                String id = String.format(Locale.getDefault(), "%s.%s", getPackageName(), model.getId());
-                bookIdsList.add(id);
+                bookIdsList.add(getInAppProductId(model.getId()));
             }
         }
         return bookIdsList;
@@ -165,7 +168,7 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
                     PurchaseModel item;
 
                     for (BooksModel model : booksModelList) {
-                        String s = String.format(Locale.getDefault(), "%s.%s", getPackageName(), model.getId());
+                        String s = getInAppProductId(model.getId());
 
                         item = new PurchaseModel();
                         if (inv != null && inv.getSkuDetails(s) != null) {
@@ -230,12 +233,10 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
                 showToast("Error purchasing: " + result);
                 return;
             }
-            loadProducts();
-            Toast.makeText(HomeActivity.this, "Purchase successful." + purchase, Toast.LENGTH_SHORT).show();
-
             try {
                 mHelper.consumeAsync(purchase, mConsumeFinishedListener);
             } catch (IabHelper.IabAsyncInProgressException e) {
+                loadProducts();
                 e.printStackTrace();
             }
         }
@@ -250,7 +251,8 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
             if (mHelper == null) return;
 
             if (result.isSuccess()) {
-                Log.e("", "Consumption successful. Provisioning." + purchase.getSku());
+                showToast("Payment Successful...");
+                loadProducts();
             } else {
                 Log.e("", "Error while consuming: " + result);
             }
@@ -265,9 +267,9 @@ public class HomeActivity extends BaseActivity implements BookAdapter.BookPurcha
 //            bp.purchase(this, id);
 ////            bp.subscribe(this, id);
             try {
-                String id = String.format(Locale.getDefault(), "%s.%s", getPackageName(), model.getId());
+                String id = getInAppProductId(model.getId());
                 if (mHelper != null) mHelper.flagEndAsync();
-                mHelper.launchSubscriptionPurchaseFlow(this, id, RC_REQUEST, mPurchaseFinishedListener, "");
+                mHelper.launchPurchaseFlow(this, id, RC_REQUEST, mPurchaseFinishedListener, "");
                 isItemClicked = true;
             } catch (IabHelper.IabAsyncInProgressException e) {
                 isItemClicked = false;
